@@ -58,3 +58,9 @@ Get-ChildItem -Path Registry::HKEY_CLASSES_ROOT\xmp.*
 pnputil /enum-devices /bus PCI /deviceids   # list PCIe bus devices
 pnputil /enum-devices /bus USB              # list USB bus devices
 ```
+
+# Reboot into BIOS
+
+```bat
+shutdown /r /fw /t 0
+```
