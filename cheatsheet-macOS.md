@@ -37,3 +37,12 @@ macOS reset App Store
 trash -v ~/Library/Caches/com.apple.appstore
 trash -v ~/Library/Caches/com.apple.appstoreagent
 ```
+
+xcode command line tools
+
+```sh
+sudo xcode-select -p                                            # print the path of the active developer directory
+sudo xcode-select -switch /Library/Developer/CommandLineTools   # set the path for the active developer directory
+sudo xcode-select --install                                     # open a dialog for installation of the command line developer tools
+sudo xcode-select -r                                            # reset to the default command line tools path
+```
