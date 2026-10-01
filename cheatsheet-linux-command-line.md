@@ -94,3 +94,10 @@ pandoc convert markdown to pdf
 ```sh
 pandoc --pdf-engine=xelatex -V papersize:a4 -f markdown -t pdf document.md -o output.pdf
 ```
+
+ls error when file start with `-`
+
+```sh
+ls -1 *.csv # will report error if any csv file start with -
+ls -1 -- *.csv # this will work
+```
